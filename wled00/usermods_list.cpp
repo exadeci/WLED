@@ -242,6 +242,8 @@
 #include "../usermods/LD2410_v2/usermod_ld2410.h"
 #endif
 
+#include "../usermods/usermod_v2_tom/usermod_v2_tom.h"
+
 void registerUsermods()
 {
 /*
@@ -470,4 +472,6 @@ void registerUsermods()
   #ifdef USERMOD_POV_DISPLAY
   UsermodManager::add(new PovDisplayUsermod());
   #endif
+
+  UsermodManager::add(new DMXOutputUsermod());
 }
